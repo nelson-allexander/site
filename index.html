@@ -2,26 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tela de login</title>
     <style>
         body{
-            background-color: rgb(47, 47, 54);
-        }
-        .centralizado{
             text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
         }
+        h1{
+            text-align: center;
+        }
+        label {
+    display: block;
+    font: 0.9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+
+
     </style>
 </head>
 <body>
-    <h2 class="centralizado">Solução Dos Seu Problemas</h2>
-    <h1 class="centralizado" >Amor</h1>
-    <p class="centralizado"> E</p>
-    <h2 class="centralizado">Fé </h2>
-    <h3 class="centralizado"> Sucesso</h3>
-    <input type="checkbox" id="chklinguagem html" name="chklinguagem"/>
-    <a href="pasta.html">Acesse!</a>
+    <div>
+        <label for="username">nome de usuario</label>
+        <input type="text" id="username" name="username">
+    </div>
+
+    <div>
+        <label for="pass">Senha</label>
+        <input type="password" id="pass" name="password"
+               minlength="1" required>
+    </div>
+    
+    <input type="submit" value="cadastrar">
+    <p></p>
+      <a href="index.html">após concluir seu cadastro clique aqui!</a>
+    
 </body>
 </html>
